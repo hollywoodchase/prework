@@ -1,0 +1,131 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+#big-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* Pics */
+#big-pic-container {
+    width: 50vw;
+    height: 40vh;
+    /* border: 2px solid green; */
+}
+#big-pic {
+    width: 100%;
+    border: 1px solid gold;
+}
+#vert-banner1 {
+    width: 25vw;
+    height: 99vh;
+    /* border: 2px solid pink; */
+}
+#vert-banner2 {
+    width: 25vw;
+    height: 99vh;
+    /* border: 2px solid red; */
+}   
+#gatsby-poster-left {
+    width: 100%;
+    height: 100%;
+}
+#gatsby-poster-right {
+    width: 100%;
+    height: 100%;
+}
+#pics {
+    display: flex;
+}
+/* Words */
+#words {
+    /* border: 2px solid white; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -30em;
+    height: 30em;
+}
+#words-top {
+    /* border: .5px solid white; */
+    height: 10%;
+}
+#directions {
+    /* border: 2px solid white; */
+    /* margin-top: -25px; */
+}
+.text {
+    color: white;
+    font-family: 'Monoton';
+    /* border: 2px solid white; */
+    text-align: center;
+    margin-bottom: 0;
+}
+#game-zone {
+    text-align: center;
+    height: 75%;
+    color: white;
+    
+}
+#dashes {
+    letter-spacing: 10px;
+    font-size: 50px;
+}
+#guessed-letters {
+    /* border: 1px solid gold; */
+    color: white;
+    height: 40%;
+}
+.game-over {
+    display:none;
+}
+#nick-sad {
+    width: 60%;
+    height: 85%;
+    border: 1px solid gold;
+}
+#loss-screen {
+    text-align: center;
+}
+.end-text {
+    color: white;
+    font-family: 'Permanent Marker';
+    /* border: 2px solid white; */
+    text-align: center;
+}
+#nick-goodbye {
+    width: 70%;
+    margin-bottom: 1em;
+    border: 1px solid gold;
+}
+
+/* Screen Adjustments */
+@media screen and (max-width: 1500px) {
+    #gatsby-head {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 980px) {
+    #words {
+        margin-top: -35em;
+        /* border: 2px solid pink; */
+        height: 33em;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #words {
+        margin-top: -37.5em;
+        height: 36em;
+    }
+    #directions {
+        margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    #words {
+        margin-top: -40em;
+        height: 39em;
+    }
+  }
