@@ -1,0 +1,1 @@
+This React App tests users' memories by asking them to click on pictures one at a time without clicking on any picture twice. Their score is tallied and the high schore is displayed. To make the game more challenging, every time a user clicks on a picture, the pictures shuffle around.
