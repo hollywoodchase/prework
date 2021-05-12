@@ -5,12 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node src/main.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap-vue": "~2.21.2",
     "core-js": "~3.12.1",
+    "express": "^4.17.1",
+    "open-api-mocker": "^1.7.0",
+    "openapi-backend": "^3.9.2",
     "openapi-client-axios": "^3.13.1",
     "vue": "~2.6.12"
   },

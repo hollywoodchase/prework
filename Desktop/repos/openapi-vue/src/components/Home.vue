@@ -1,28 +1,20 @@
 <template>
   <div class="hello">
     <h1>Whaddup</h1>
+    <div id="add">
+      {{ info }}
+      {{ msg }}
+      <h2>lalala</h2>
+    </div>
   </div>
 </template>
 
 <script>
-import OpenAPIClientAxios from "openapi-client-axios";
-
-async () => {
-  const api = new OpenAPIClientAxios({
-    definition:
-      "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/master/examples/v3.0/petstore.yaml",
-  });
-  const client = await api.init();
-  const res = await api.getPets(); // res.data will contain the result of the API call
-  console.log(res);
-  console.log(client);
-
-};
-
 export default {
-  name: "HelloWorld",
+  name: "Home",
   props: {
     msg: String,
+    info: String
   },
 };
 </script>
