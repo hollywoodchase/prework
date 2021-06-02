@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@syncfusion/ej2-vue-gantt": "^19.1.64",
-    "vue": "^2.5.11"
+    "babel-polyfill": "^6.26.0",
+    "vue": "^2.5.11",
+    "vuex": "^3.6.2"
   },
   "browserslist": [
     "> 1%",

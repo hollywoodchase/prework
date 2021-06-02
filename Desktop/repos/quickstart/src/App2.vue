@@ -11,7 +11,7 @@
       :toolbar="toolbar"
     ></ejs-gantt>
     <mps-event-detail> </mps-event-detail>
-    <data-view/>
+    <data-view2/>
   </div>
 </template>
 <script>
@@ -19,7 +19,7 @@ import Vue from "vue";
 import { GanttPlugin, Toolbar } from "@syncfusion/ej2-vue-gantt";
 import { projectNewData } from "./data-source.js";
 import MpsEventDetail from "./components/MpsEventDetail.vue";
-import DataView from "./components/DataView";
+import DataView2 from "./components/DataView2";
 
 let customZoomingLevels = [
   {
@@ -103,15 +103,12 @@ let customZoomingLevels = [
 Vue.use(GanttPlugin);
 export default {
   components: {
-    MpsEventDetail, DataView
+    MpsEventDetail, DataView2
   },
   methods: {
-    doSomething: function() {
-      console.log("doing something");
-    },
-    taskbarClicked(event) {
-      this.$store.dispatch("eventSelected", event.data);
-    }
+      taskbarClicked: function(event) {
+          this.$store.dispatch("eventSelected", event.data);
+      }
   },
   data: function() {
     return {
